@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width = device-width , initial-scale = 1.0">
+      <meta http-equiv="X-UA-compatible" content="IE-edge">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <script src="js/script.js" defer></script>
+      <title>DPA Molas</title>
+   </head>
+   <body>
+      <div class="logo"></div>
+      <main>
+         <button id="refresh-button"><i class="bi bi-arrow-clockwise"></i></button>
+         <h1 id="main-title">Orçamento</h1>
+         <select name="Molas" id="opcoes-de-molas">
+            <option label="Selecione a  mola"></option>
+            <option value="mola-de-compressao" id="opt-compressao">Mola de compressão</option>
+            <option value="mola-conica" id="opt-conica">Mola conica</option>
+            <option value="mola-de-torcao" id="opt-torcao">Mola de torção</option>
+            <option value="mola-de-tracao" id="opt-tracao">Mola de tração</option>
+            <option value="mola-prato" id="opt-prato">Mola prato</option>
+            <option value="mola-biconica" id="opt-biconica">Mola bicônica</option>
+        </select>
+       
+        <form id="mola-de-compressao" name="form-compressao" class="hidden">
+              <p>compressao</p>
+               <input type="image" class="inputs" src="img/m-compressao.jpg" width="100%" height="250px">
+               <input type="text" class="inputs" name="Cliente" placeholder="Nome">
+               <input type="tel" class="inputs" name="Cel" placeholder="Cel (DDD)">
+               <input type="text" name="Mola de compressao" class="hidden">
+               <input type="text" class="inputs" name="Da" placeholder="Da=Diâmetro externo">
+               <input type="text" class="inputs" name="Di" placeholder="Di=Diâmetro interno">
+               <input type="text" class="inputs" name="Lo" placeholder="Lo=Comprimento da mola">
+               <input type="text" class="inputs" name="d" placeholder="d=Diâmetro do arame">
+               <input type="text" class="inputs" name="P" placeholder="P=Passo do centro do arame">
+               <button type="submit" id="button" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <form id="mola-conica" name="form-conica" class="hidden">
+             <p>conica</p>
+             <input type="image" class="inputs" src="img/m-compressao.jpg" width="100%" height="250px">
+             <input type="text" class="inputs" name="Cliente" placeholder="Nome">
+             <input type="tel" class="inputs" name="Cel" placeholder="Cel (DDD)">
+             <input type="text" name="Mola cônica" class="hidden">
+             <input type="text" class="inputs" name="De" placeholder="De=Diâmetro externo">
+             <input type="text" class="inputs" name="Di" placeholder="Di=Diâmetro interno">
+             <input type="text" class="inputs" name="Lo" placeholder="Lo=Comprimento da mola">
+             <input type="text" class="inputs" name="d" placeholder="d=Diâmetro do arame">
+             <input type="text" class="inputs" name="P" placeholder="P=Passo do centro do arame">
+             <button type="submit" id="button" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <form id="mola-de-torcao" name="form-torcao" class="hidden">
+             <p>torcao</p>
+             <input type="image" class="inputs" src="img/m-compressao.jpg" width="100%" height="250px">
+             <input type="text" class="inputs" name="Cliente" placeholder="Nome">
+             <input type="tel" class="inputs" name="Cel" placeholder="Cel (DDD)">
+             <input type="text" name="Mola de torcao" class="hidden">
+             <input type="text" class="inputs" name="De" placeholder="Da=Diâmetro externo">
+             <input type="text" class="inputs" name="d" placeholder="d=Diâmetro do arame">
+             <input type="text" class="inputs" name="haste1" placeholder="HASTE1=Comprimento">
+             <input type="text" class="inputs" name="haste2" placeholder="HASTE2=Comprimento">
+             <button type="submit" id="button" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <form id="mola-de-tracao" name="form-tracao" class="hidden">
+            <p>tracao</p>
+            <input type="image"class="inputs" src="img/m-compressao.jpg" width="100%" height="250px">
+            <input type="text" class="inputs" name="Cliente" placeholder="Nome">
+            <input type="tel"  class="inputs" name="Cel" placeholder="Cel (DDD)">
+            <input type="text" name="Mola de tracao" class="hidden">
+            <input type="text" class="inputs" name="De" placeholder="De=Diâmetro externo">
+            <input type="text" class="inputs" name="Di" placeholder="Di=Diâmetro interno">
+            <input type="text" class="inputs" name="Lo" placeholder="Lo=Comp. int. dos ganchos mola">
+            <input type="text" class="inputs" name="d" placeholder="d=Diâmetro do arame">
+            <input type="text" class="inputs" name="LK" placeholder="LK=Comp. do corpo s/gancho">
+            <input type="text" class="inputs" name="m" placeholder="m=Abertura do gancho">
+            <button type="submit" id="button" class="btn btn-primary">Enviar</button>
+         </form>
+
+         <form id="mola-prato" name="form-prato" class="hidden">
+            <p>prato</p>
+            <input type="image" class="inputs" src="img/m-compressao.jpg" width="100%" height="250px">
+            <input type="text" class="inputs" name="Cliente" placeholder="Nome">
+            <input type="tel" class="inputs" name="Cel" placeholder="Cel (DDD)">
+            <input type="text" name="Mola prato" class="hidden">
+            <input type="text" class="inputs" name="De" placeholder="De=Diâmetro externo">
+            <input type="text" class="inputs" name="Di" placeholder="Di=Diâmetro interno">
+            <input type="text" class="inputs" name="Do" placeholder="Do=Diâmetro médio">
+            <input type="text" class="inputs" name="Lo" placeholder="Lo=Altura">
+            <input type="text" class="inputs" name="LK" placeholder="T=Espessura">
+            <button type="submit" id="button" class="btn btn-primary">Enviar</button>
+         </form>
+
+         <form id="mola-biconica" name="form-biconica" class="hidden">
+            <p>biconica</p>
+            <input type="image" class="inputs" src="img/m-compressao.jpg" width="100%" height="250px">
+            <input type="text" class="inputs" name="Cliente" placeholder="Nome">
+            <input type="tel" class="inputs" name="Cel" placeholder="Cel (DDD)">
+            <input type="text" name="Mola de biconica" class="hidden">
+            <input type="text" class="inputs" name="Di" placeholder="Di=Diâmetro interno">
+            <input type="text" class="inputs" name="Lo" placeholder="Lo=Comprimento da mola">
+            <input type="text" class="inputs" name="d" placeholder="d=Diâmetro do arame">
+            <button type="submit" id="button" class="btn btn-primary">Enviar</button>
+         </form>
+      </main>
+
+      <section id="missao-visao">
+         <h3 class="titulo-valores">Missão</h3>
+         <p class="valores">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat soluta unde illo. Sit molestiae saepe velit! Impedit dignissimos sapiente reiciendis. Error dignissimos, quasi dolor nulla voluptatem temporibus quae excepturi?
+         </p>
+         <h3 class="titulo-valores">Visão</h3>
+         <p class="valores">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio explicabo laboriosam numquam tempora. Corrupti unde officiis accusamus cupiditate temporibus impedit id ea totam, architecto hic quasi corporis quae, vel velit.
+         </p>
+      </section>
+      
+      <section id="img-molas">
+         
+         <div class="cards-de-molas">
+            <h2>Mola de compressão</h2>
+            <img src="./img/mola.jpeg" alt="imagem de mola de torção">
+            <div class="container-buttons-cards">
+               <button id="button-compressao" class="btn btn-primary button">Detalhes</button>
+               <a href="#"><button class="btn btn-success button-orcamento">Orçamento</button></a>
+            </div>
+
+            <p id="mola-compressao" class="hidden detalhes-molas">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vitae qui quaerat at porro aspernatur exercitationem cumque illum nisi quia dicta veritatis dolorum eos placeat laudantium modi, totam dignissimos distinctio.
+            </p> 
+         </div>
+
+         <div class="cards-de-molas">
+            <h2>Mola cônica</h2>
+            <img src="./img/mola.jpeg" alt="imagem de mola de torção">
+            <div class="container-buttons-cards">
+               <button id="button-conica" class="btn btn-primary button">Detalhes</button>
+               <a href="#"><button class="btn btn-success button-orcamento">Orçamento</button></a>
+            </div>
+
+            <p id="detalhes-mola-conica" class="hidden  detalhes-molas">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vitae qui quaerat at porro aspernatur exercitationem cumque illum nisi quia dicta veritatis dolorum eos placeat laudantium modi, totam dignissimos distinctio.
+            </p> 
+         </div>
+
+         <div class="cards-de-molas">
+            <h2>Mola de torção</h2>
+            <img src="./img/mola.jpeg" alt="imagem de mola de torção">
+            <div class="container-buttons-cards">
+               <button id="button-torcao" class="btn btn-primary button">Detalhes</button>
+               <a href="#"><button class="btn btn-success button-orcamento">Orçamento</button></a>
+            </div>
+
+            <p id="mola-torcao" class="hidden detalhes-molas">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vitae qui quaerat at porro aspernatur exercitationem cumque illum nisi quia dicta veritatis dolorum eos placeat laudantium modi, totam dignissimos distinctio.
+            </p> 
+         </div>
+
+         <div class="cards-de-molas">
+            <h2>Mola tração</h2>
+            <img src="./img/mola.jpeg" alt="imagem de mola de torção">
+            <div class="container-buttons-cards">
+               <button id="button-tracao" class="btn btn-primary button">Detalhes</button>
+               <a href="#"><button class="btn btn-success button-orcamento">Orçamento</button></a>
+            </div>
+
+            <p id="mola-tracao" class="hidden detalhes-molas">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vitae qui quaerat at porro aspernatur exercitationem cumque illum nisi quia dicta veritatis dolorum eos placeat laudantium modi, totam dignissimos distinctio.
+            </p> 
+         </div>
+
+         <div class="cards-de-molas">
+            <h2>Mola prato</h2>
+            <img src="./img/mola.jpeg" alt="imagem de mola de torção">
+            <div class="container-buttons-cards">
+               <button id="button-prato" class="btn btn-primary button">Detalhes</button>
+               <a href="#"><button class="btn btn-success button-orcamento">Orçamento</button></a>
+            </div>
+
+            <p id="detalhes-mola-prato" class="hidden  detalhes-molas">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vitae qui quaerat at porro aspernatur exercitationem cumque illum nisi quia dicta veritatis dolorum eos placeat laudantium modi, totam dignissimos distinctio.
+            </p> 
+         </div>
+
+         <div class="cards-de-molas">
+            <h2>Mola biconica</h2>
+            <img src="./img/mola.jpeg" alt="imagem de mola de torção">
+            <div class="container-buttons-cards">
+               <button id="button-biconica" class="btn btn-primary button">Detalhes</button>
+               <a href="#"><button class="btn btn-success button-orcamento">Orçamento</button></a>
+            </div>
+
+            <p id="detalhes-mola-biconica" class="hidden  detalhes-molas">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vitae qui quaerat at porro aspernatur exercitationem cumque illum nisi quia dicta veritatis dolorum eos placeat laudantium modi, totam dignissimos distinctio.
+            </p> 
+         </div>
+      </section>
+
+      <footer>
+         <div class="logo"></div>
+         <p class="text-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolore obcaecati tenetur</p>
+
+         <h3 class="text-footer">Atendimento personalizado</h3>
+         
+         <a href="https://wa.me/14996797612" class="text-footer"><i class="bi bi-whatsapp"></i></a>
+         
+         <a href="tel:+14996797612" class="atendimento-personalizado">(14)99679-7612</a>
+
+         <address class="text-footer">Rua: Prefeito Alves de Lima , 4-05 <br>
+         Vila Independencia - CEP 17054-290 <br> Bauru-Sp</address>
+
+         <a href="mailto:compras.dpamolas@gmail.com"  class="atendimento-personalizado text-footer">compras.dpamolas@gmail.com</a>
+         <br>
+         <small >DPA molas | Desenvolvido por <span id="small-text">JayWeb Systems</span></small>
+      </footer>
+   </body>
+</html>

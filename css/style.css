@@ -152,13 +152,14 @@ footer {
 
 small {
    display: block;
-   width: 90%;
+   width: 80%;
    margin: auto;
    margin-top: 5rem;
+   font-size: small;
 }
 
 #small-text {
-   font-size: small;
+   font-size: smaller;
    font-style:oblique;
    color: rgb(131, 150, 131);
 }

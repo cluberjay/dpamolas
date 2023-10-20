@@ -1,5 +1,5 @@
 body {
-   width : 100%;
+   width: 100%;
 }
 
 .logo {
@@ -17,7 +17,7 @@ body {
    position: absolute;
    top: 3.8rem;
    right: 3rem;
-   background-color:none;
+   background-color: none;
    font-size: 1.5rem;
    font-weight: 900;
    border: none;
@@ -37,7 +37,7 @@ body {
    width: 50%;
    max-width: 300px;
    margin: auto;
-   margin-top: 50%;
+   margin-top: 5%;
    padding-left: .20rem;
 }
 
@@ -58,11 +58,11 @@ form .inputs {
 }
 
 #missao-visao {
-   margin-top: 50%;
+   margin-top: 37%;
 }
 
 .valores {
-   padding:1.5rem;
+   padding: 1.5rem;
    margin-bottom: 5rem;
 }
 
@@ -128,8 +128,7 @@ form .inputs {
 
 footer {
    background: linear-gradient(to top , #4d4545 , #7a7373);
-
-   padding-bottom:4rem;
+   padding-bottom:1rem;
 }
 
 .text-footer {
@@ -152,11 +151,10 @@ footer {
 }
 
 small {
-   position: relative;
-   top: 3.5rem;
-   margin-bottom: 1rem;
-   left: 3rem;
-   width: 150px;
+   display: block;
+   width: 80%;
+   margin: auto;
+   margin-top: 5rem;
 }
 
 #small-text {

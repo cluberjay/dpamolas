@@ -17,10 +17,14 @@ body {
    position: absolute;
    top: 3.8rem;
    right: 3rem;
-   background-color: none;
+   background-color: #fff;
    font-size: 1.5rem;
    font-weight: 900;
    border: none;
+}
+
+.bi-arrow-clockwise {
+   background-color: #fff;
 }
 
 #main-title {

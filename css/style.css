@@ -127,7 +127,7 @@ form .inputs {
 }
 
 footer {
-   background: linear-gradient(to top ,#6255b , #2c66ab);
+   background: linear-gradient(to top , #09095e , #3939ad);
    padding-bottom:1rem;
 }
 
@@ -152,7 +152,7 @@ footer {
 
 small {
    display: block;
-   width: 80%;
+   width: 70%;
    margin: auto;
    margin-top: 5.5rem;
    font-size: smaller;

@@ -127,7 +127,7 @@ form .inputs {
 }
 
 footer {
-   background: linear-gradient(to top , #4d4545 , #7a7373);
+   background: linear-gradient(to top ,#6255b , #2c66ab);
    padding-bottom:1rem;
 }
 
@@ -154,12 +154,13 @@ small {
    display: block;
    width: 80%;
    margin: auto;
-   margin-top: 5rem;
+   margin-top: 5.5rem;
    font-size: smaller;
+   color:#fff;
 }
 
 #small-text {
    font-size: smaller;
    font-style:oblique;
-   color: rgb(131, 150, 131);
+   color: #81b681;
 }
